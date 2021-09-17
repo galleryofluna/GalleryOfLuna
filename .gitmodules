@@ -1,4 +1,4 @@
 [submodule "submodules/GalleryOfLuna.Philomena"]
-	path = submodules/GalleryOfLuna.Philomena
+	path = dep/GalleryOfLuna.Philomena
 	url = https://github.com/galleryofluna/GalleryOfLuna.Philomena
 	branch = develop
