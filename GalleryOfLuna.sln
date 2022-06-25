@@ -1,16 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryOfLuna", "src\GalleryOfLuna\GalleryOfLuna.csproj", "{AC64135C-A470-4603-B18F-5500701F4252}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalleryOfLuna", "src\GalleryOfLuna\GalleryOfLuna.csproj", "{AC64135C-A470-4603-B18F-5500701F4252}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryOfLuna.Model", "src\GalleryOfLuna.Model\GalleryOfLuna.Model.csproj", "{C62CEED5-C405-402C-AB6E-FC56DD2D17C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalleryOfLuna.Model", "src\GalleryOfLuna.Model\GalleryOfLuna.Model.csproj", "{C62CEED5-C405-402C-AB6E-FC56DD2D17C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryOfLuna.Abstractions", "src\GalleryOfLuna.Abstractions\GalleryOfLuna.Abstractions.csproj", "{E896F0B2-2F06-46AC-846D-DB93552FD298}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalleryOfLuna.Abstractions", "src\GalleryOfLuna.Abstractions\GalleryOfLuna.Abstractions.csproj", "{E896F0B2-2F06-46AC-846D-DB93552FD298}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryOfLuna.ImageProvider.Derpibooru", "src\GalleryOfLuna.ImageProvider.Derpibooru\GalleryOfLuna.ImageProvider.Derpibooru.csproj", "{D5E67D41-123D-4894-9F0D-79B1B5B74B76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalleryOfLuna.ImageProvider.Derpibooru", "src\GalleryOfLuna.ImageProvider.Derpibooru\GalleryOfLuna.ImageProvider.Derpibooru.csproj", "{D5E67D41-123D-4894-9F0D-79B1B5B74B76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryOfLuna.Philomena", "submodules\GalleryOfLuna.Philomena\src\GalleryOfLuna.Philomena\GalleryOfLuna.Philomena.csproj", "{00359DF3-94B1-47BF-992E-663F6576A7E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalleryOfLuna.Philomena", "dep\GalleryOfLuna.Philomena\src\GalleryOfLuna.Philomena\GalleryOfLuna.Philomena.csproj", "{00359DF3-94B1-47BF-992E-663F6576A7E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryOfLuna.Philomena.Tests", "submodules\GalleryOfLuna.Philomena\tests\GalleryOfLuna.Philomena.Tests\GalleryOfLuna.Philomena.Tests.csproj", "{69E352EC-874B-474D-AB7F-5BDC5B6626BC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A24336A9-ADC8-45E8-8F2B-CD61F4208CC7}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalleryOfLuna.Philomena.Tests", "dep\GalleryOfLuna.Philomena\test\GalleryOfLuna.Philomena.Tests\GalleryOfLuna.Philomena.Tests.csproj", "{7462BA47-EF3F-4EC4-94A2-F90C0FE8D16A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,9 +47,15 @@ Global
 		{00359DF3-94B1-47BF-992E-663F6576A7E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00359DF3-94B1-47BF-992E-663F6576A7E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00359DF3-94B1-47BF-992E-663F6576A7E0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{69E352EC-874B-474D-AB7F-5BDC5B6626BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69E352EC-874B-474D-AB7F-5BDC5B6626BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69E352EC-874B-474D-AB7F-5BDC5B6626BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69E352EC-874B-474D-AB7F-5BDC5B6626BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7462BA47-EF3F-4EC4-94A2-F90C0FE8D16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7462BA47-EF3F-4EC4-94A2-F90C0FE8D16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7462BA47-EF3F-4EC4-94A2-F90C0FE8D16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7462BA47-EF3F-4EC4-94A2-F90C0FE8D16A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A0CCF45-3B4E-4B78-AB7F-59E01E3DD611}
 	EndGlobalSection
 EndGlobal

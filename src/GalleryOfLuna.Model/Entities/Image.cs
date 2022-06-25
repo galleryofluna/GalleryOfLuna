@@ -14,7 +14,7 @@ namespace GalleryOfLuna.Model
         /// <summary>
         /// Description of image author. 
         /// </summary>
-        public Author? Author { get; }
+        public Author Author { get; }
 
         public List<Tag> Tags { get; }
 
