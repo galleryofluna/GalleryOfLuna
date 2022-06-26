@@ -33,6 +33,7 @@ namespace GalleryOfLuna.Vk
 
             _httpClient.DefaultRequestHeaders.Add("Content", "application/json");
             _httpClient.DefaultRequestHeaders.Add("User-Agent", "Luna's Gallery implementation of VK API SDK for .NET");
+            _httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {_configuration.AccessToken}");
         }
 
         private void SetupJsonOptions()
@@ -46,7 +47,6 @@ namespace GalleryOfLuna.Vk
             CancellationToken cancellationToken = default)
         {
             var queryBuilder = new QueryBuilder()
-                .Add(QueryParameters.AccessToken, _configuration.AccessToken)
                 .Add(QueryParameters.Version, ApiVersion);
 
             var requestUriBuilder = new UriBuilder(_httpClient.BaseAddress!);
@@ -64,7 +64,6 @@ namespace GalleryOfLuna.Vk
             CancellationToken cancellationToken = default)
         {
             var queryBuilder = new QueryBuilder()
-                .Add(QueryParameters.AccessToken, _configuration.AccessToken)
                 .Add(QueryParameters.Version, ApiVersion)
                 .Add(QueryParameters.GroupId, groupId);
 
@@ -86,7 +85,6 @@ namespace GalleryOfLuna.Vk
             CancellationToken cancellationToken = default)
         {
             var queryBuilder = new QueryBuilder()
-                .Add(QueryParameters.AccessToken, _configuration.AccessToken)
                 .Add(QueryParameters.Version, ApiVersion)
                 .Add(QueryParameters.GroupId, groupId)
                 .Add(QueryParameters.Server, server)
@@ -113,7 +111,6 @@ namespace GalleryOfLuna.Vk
             CancellationToken cancellationToken = default)
         {
             var queryBuilder = new QueryBuilder()
-                .Add(QueryParameters.AccessToken, _configuration.AccessToken)
                 .Add(QueryParameters.Version, ApiVersion)
                 .Add(QueryParameters.Message, message)
                 .Add(QueryParameters.Copyright, copyright)
@@ -139,7 +136,6 @@ namespace GalleryOfLuna.Vk
             CancellationToken cancellationToken = default)
         {
             var queryBuilder = new QueryBuilder()
-                .Add(QueryParameters.AccessToken, _configuration.AccessToken)
                 .Add(QueryParameters.Version, ApiVersion)
                 .Add(QueryParameters.File, file)
                 .Add(QueryParameters.Title, title)
@@ -162,7 +158,6 @@ namespace GalleryOfLuna.Vk
             CancellationToken cancellationToken = default)
         {
             var queryBuilder = new QueryBuilder()
-                .Add(QueryParameters.AccessToken, _configuration.AccessToken)
                 .Add(QueryParameters.Version, ApiVersion)
                 .Add(QueryParameters.OwnerId, ownerId)
                 .Add(QueryParameters.DocId, docId);
@@ -186,7 +181,6 @@ namespace GalleryOfLuna.Vk
             CancellationToken cancellationToken = default)
         {
             var queryBuilder = new QueryBuilder()
-                .Add(QueryParameters.AccessToken, _configuration.AccessToken)
                 .Add(QueryParameters.Version, ApiVersion)
                 .Add(QueryParameters.Name, name)
                 .Add(QueryParameters.Description, description)
