@@ -15,11 +15,31 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalleryOfLuna.Philomena", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A24336A9-ADC8-45E8-8F2B-CD61F4208CC7}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		Directory.Build.props = Directory.Build.props
 		global.json = global.json
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalleryOfLuna.Philomena.Tests", "dep\GalleryOfLuna.Philomena\test\GalleryOfLuna.Philomena.Tests\GalleryOfLuna.Philomena.Tests.csproj", "{7462BA47-EF3F-4EC4-94A2-F90C0FE8D16A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalleryOfLuna.Vk", "src\GalleryOfLuna.Vk\GalleryOfLuna.Vk.csproj", "{DF5BC14D-75C9-499C-AACE-3B130C90E031}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalleryOfLuna.Derpibooru.EntityFramework", "src\GalleryOfLuna.Derpibooru.EntityFramework\GalleryOfLuna.Derpibooru.EntityFramework.csproj", "{E8FB3196-4D7E-49A2-8DF6-1B2D1E854B29}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalleryOfLuna.EntityFramework", "src\GalleryOfLuna.EntityFramework\GalleryOfLuna.EntityFramework.csproj", "{0655309D-7B5B-4C0F-BD09-ADF0764032F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalleryOfLuna.EntityFramework.PostgreSQL", "src\GalleryOfLuna.EntityFramework.PostgreSQL\GalleryOfLuna.EntityFramework.PostgreSQL.csproj", "{2AE5CCFF-7194-463C-B479-EB956418C6A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalleryOfLuna.EntityFramework.Sqlite", "src\GalleryOfLuna.EntityFramework.Sqlite\GalleryOfLuna.EntityFramework.Sqlite.csproj", "{C92FFEE6-7300-4148-AA79-9B60D53A41A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{276857A2-77A6-4A84-8E46-0CA14ECD2211}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pg-derpibooru-dump", "pg-derpibooru-dump", "{7B2B81FF-C7FE-4E07-90D3-AEBC1990B210}"
+	ProjectSection(SolutionItems) = preProject
+		tools\pg-derpibooru-dump\add-wilson-score.sql = tools\pg-derpibooru-dump\add-wilson-score.sql
+		tools\pg-derpibooru-dump\Dockerfile = tools\pg-derpibooru-dump\Dockerfile
+		tools\pg-derpibooru-dump\restore.sh = tools\pg-derpibooru-dump\restore.sh
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,9 +71,32 @@ Global
 		{7462BA47-EF3F-4EC4-94A2-F90C0FE8D16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7462BA47-EF3F-4EC4-94A2-F90C0FE8D16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7462BA47-EF3F-4EC4-94A2-F90C0FE8D16A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5BC14D-75C9-499C-AACE-3B130C90E031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5BC14D-75C9-499C-AACE-3B130C90E031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5BC14D-75C9-499C-AACE-3B130C90E031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5BC14D-75C9-499C-AACE-3B130C90E031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8FB3196-4D7E-49A2-8DF6-1B2D1E854B29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8FB3196-4D7E-49A2-8DF6-1B2D1E854B29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8FB3196-4D7E-49A2-8DF6-1B2D1E854B29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8FB3196-4D7E-49A2-8DF6-1B2D1E854B29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0655309D-7B5B-4C0F-BD09-ADF0764032F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0655309D-7B5B-4C0F-BD09-ADF0764032F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0655309D-7B5B-4C0F-BD09-ADF0764032F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0655309D-7B5B-4C0F-BD09-ADF0764032F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AE5CCFF-7194-463C-B479-EB956418C6A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE5CCFF-7194-463C-B479-EB956418C6A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE5CCFF-7194-463C-B479-EB956418C6A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE5CCFF-7194-463C-B479-EB956418C6A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92FFEE6-7300-4148-AA79-9B60D53A41A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92FFEE6-7300-4148-AA79-9B60D53A41A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92FFEE6-7300-4148-AA79-9B60D53A41A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92FFEE6-7300-4148-AA79-9B60D53A41A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7B2B81FF-C7FE-4E07-90D3-AEBC1990B210} = {276857A2-77A6-4A84-8E46-0CA14ECD2211}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A0CCF45-3B4E-4B78-AB7F-59E01E3DD611}

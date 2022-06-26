@@ -1,6 +1,6 @@
 ﻿using GalleryOfLuna.Model.Identifiers;
 
-namespace GalleryOfLuna.Model
+namespace GalleryOfLuna.Model.Entities
 {
     public class Author
     {

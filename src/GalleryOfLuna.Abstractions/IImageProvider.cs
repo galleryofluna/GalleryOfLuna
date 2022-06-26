@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using GalleryOfLuna.Model;
+﻿using GalleryOfLuna.Model.Entities;
 
 namespace GalleryOfLuna.Abstractions
 {

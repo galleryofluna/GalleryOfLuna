@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using GalleryOfLuna.Model.Identifiers;
+﻿using GalleryOfLuna.Model.Identifiers;
 using GalleryOfLuna.Model.ValueObjects;
 
-namespace GalleryOfLuna.Model
+namespace GalleryOfLuna.Model.Entities
 {
     public class Image
     {

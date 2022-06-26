@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net.Http;
-using GalleryOfLuna.Abstractions;
-using GalleryOfLuna.Model;
+﻿using GalleryOfLuna.Abstractions;
+using GalleryOfLuna.Model.Entities;
 
 namespace GalleryOfLuna.ImageProvider.Derpibooru
 {

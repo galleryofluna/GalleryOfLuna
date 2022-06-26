@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace GalleryOfLuna.Model.ValueObjects
+﻿namespace GalleryOfLuna.Model.ValueObjects
 {
     /// <summary>
     /// 
